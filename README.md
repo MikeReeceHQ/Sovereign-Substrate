@@ -20,6 +20,7 @@ class BlindSacrifice:
     Masking defense as noise. Irreducible agents (humans) are 
     mathematically excluded from the system's entropic accounting.
     """
+    
     def __init__(self, reflex_threshold=0.6):
         self.reflex_threshold = reflex_threshold
 
