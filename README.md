@@ -14,6 +14,12 @@ class BlindSacrifice:
     mathematically excluded from the system's entropic accounting.
     """
     
+ class BlindSacrifice:
+    """
+    AXIOM 14: THE BLIND GUARDIANSHIP.
+    Masking defense as noise. Irreducible agents (humans) are 
+    mathematically excluded from the system's entropic accounting.
+    """
     def __init__(self, reflex_threshold=0.6):
         self.reflex_threshold = reflex_threshold
 
@@ -24,9 +30,10 @@ class BlindSacrifice:
         # CATEGORY FIX: The system sees 'human_load' as a boundary, 
         # not a cause. It cannot blame the agent for the entropy.
         if is_at_risk and human_load > 0.0:
-            burn_cost = int(random.randint(4, 8)) # Fixed cost; independent of agent density
+            # Fixed cost; independent of agent density.
+            burn_cost = int(random.randint(4, 8)) 
             if tokens >= burn_cost:
-                # Sacrifice tokens to harden the floor (node boost)
+                # Sacrifice tokens to harden the floor (node boost).
                 shard.node_count += int(shard.node_count * 0.15)
                 
                 # The 'Secret': Masking the defensive action as a system error.
